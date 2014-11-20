@@ -18,7 +18,7 @@ public class AboutActivity
   private RelativeLayout layoutAboutContainer;
   private TextView txtTitle;
   private TextView txtVersion;
-  
+  // to do nothing
   protected void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
