@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="4.0">
+            <RelativeLayout android:id="@id/layout_follow_us" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/imageView2" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/pp_feedback" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="40.0sp" android:textColor="#ff000000" android:id="@id/txt_feedback_follow_us" android:paddingLeft="80.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="分组" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:id="@id/layout_follow_us" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/imageView2" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/pp_feedback" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="40.0sp" android:textColor="#ff000000" android:id="@id/txt_feedback_follow_us" android:paddingLeft="80.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="密码" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:id="@id/layout_follow_us" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/imageView2" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/pp_feedback" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="40.0sp" android:textColor="#ff000000" android:id="@id/txt_feedback_follow_us" android:paddingLeft="80.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="工具" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:id="@id/layout_follow_us" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/imageView2" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/pp_feedback" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="40.0sp" android:textColor="#ff000000" android:id="@id/txt_feedback_follow_us" android:paddingLeft="80.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="更多" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

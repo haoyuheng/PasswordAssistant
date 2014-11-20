@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/img_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pp" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:typeface="serif" android:textColor="#ff666666" android:id="@id/txt_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Version 1.0" android:layout_below="@id/img_logo" android:layout_centerHorizontal="true" />
+        <TextView android:typeface="serif" android:textColor="#ff666666" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Password Assistant" android:layout_alignBottom="@id/img_logo" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/layout_about_container" android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginBottom="-200.0dip">
+            <View android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentTop="true" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+                <TextView android:typeface="serif" android:textColor="@color/textview_style_gray" android:gravity="center_horizontal" android:id="@id/textView2" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="越来越多的账户密码是不是让你头疼不已，不用担心，万能密码助手（Password Assistant）就是一剂良药，让您不再烦恼." />
+                <TextView android:typeface="serif" android:textColor="@color/textview_style_gray" android:gravity="center_horizontal" android:id="@id/textView3" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="万能密码助手（Password Assistant）就像一个保险箱，保存你所有的账户密码，而你需要的只是记住保险箱的密码，也就是我们的管理密码." />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="#ffff8e0d" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

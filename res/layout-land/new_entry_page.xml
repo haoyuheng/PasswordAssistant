@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffff8e0d" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/relativeLayout1" android:background="#ffff8e0d" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_content" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/imageView1">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="5.0dip">
+                    <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_alignParentBottom="true" />
+                    <EditText android:textColor="#ffffffff" android:textColorHint="#50ffffff" android:id="@id/txt_master_key" android:background="#ffff8e0d" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.5dip" android:hint="Enter Master Key" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:inputType="textPassword" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:weightSum="2.0">
+                    <TextView android:textSize="28.0sp" android:textColor="@color/textview_style_white" android:id="@id/btn_unblock" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UNBLOCK" android:onClick="btnUnlock" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_inner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/textview_style_white" android:gravity="right" android:id="@id/txt_forgot_master_key" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Forgot?" android:onClick="forgotPassword" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/img_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/custom_info_main" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="help" />
+            <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="55.0dip" android:layout_marginTop="75.0dip" android:src="@drawable/pp_text_shadow" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

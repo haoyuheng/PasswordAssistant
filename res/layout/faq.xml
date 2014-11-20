@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ffff8e0d" android:layout_width="fill_parent" android:layout_height="75.0dip">
+        <ImageView android:id="@id/imageView2" android:layout_width="90.0dip" android:layout_height="wrap_content" android:src="@drawable/pp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="46.0sp" android:id="@id/txt_faq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="FAQ" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/scrollView1" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_faq_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:textSize="14.0sp" android:typeface="serif" android:textColor="@color/textview_style" android:gravity="center_vertical" android:id="@id/txt_faq_1" android:paddingLeft="45.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/pp_header" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/layout_faq_1_container" android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginBottom="-55.0dip">
+                        <View android:id="@id/view1" android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                        <TextView android:textSize="14.0sp" android:typeface="serif" android:textColor="#ff888888" android:id="@id/txt_faq_ans_1" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_ans_1" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_faq_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:textSize="14.0sp" android:typeface="serif" android:textColor="@color/textview_style" android:gravity="center_vertical" android:id="@id/txt_faq_2" android:paddingLeft="45.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/pp_header" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/layout_faq_2_container" android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginBottom="-70.0dip">
+                        <View android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                        <TextView android:typeface="serif" android:textColor="#ff888888" android:id="@id/txt_faq_ans_2" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_ans_2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_faq_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:typeface="serif" android:textColor="@color/textview_style" android:gravity="center_vertical" android:id="@id/txt_faq_3" android:paddingLeft="45.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_3" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/pp_header" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/layout_faq_3_container" android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_marginBottom="-105.0dip">
+                        <View android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                        <TextView android:typeface="serif" android:textColor="#ff888888" android:id="@id/txt_faq_ans_3" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_ans_3" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_faq_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:typeface="serif" android:textColor="@color/textview_style" android:gravity="center_vertical" android:id="@id/txt_faq_4" android:paddingLeft="45.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_4" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/pp_header" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/layout_faq_4_container" android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginBottom="-55.0dip">
+                        <View android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                        <TextView android:typeface="serif" android:textColor="#ff888888" android:id="@id/txt_faq_ans_4" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_ans_4" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_faq_5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/pp_header" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:typeface="serif" android:textColor="@color/textview_style" android:gravity="center_vertical" android:id="@id/txt_faq_5" android:paddingLeft="45.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_5" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/layout_faq_5_container" android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="135.0dip" android:layout_marginBottom="-135.0dip">
+                        <View android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                        <TextView android:typeface="serif" android:textColor="#ff888888" android:id="@id/txt_faq_ans_5" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_ans_5" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_faq_6" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:typeface="serif" android:textColor="@color/textview_style" android:gravity="center_vertical" android:id="@id/txt_faq_6" android:paddingLeft="45.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_6" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/pp_header" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/layout_faq_6_container" android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginBottom="-70.0dip">
+                        <View android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                        <TextView android:typeface="serif" android:textColor="#ff888888" android:id="@id/txt_faq_ans_6" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_ans_6" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_faq_7" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:typeface="serif" android:textColor="@color/textview_style" android:gravity="center_vertical" android:id="@id/txt_faq_7" android:paddingLeft="45.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_7" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/pp_header" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/layout_faq_7_container" android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginBottom="-70.0dip">
+                        <View android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                        <TextView android:typeface="serif" android:textColor="#ff888888" android:id="@id/txt_faq_ans_7" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_ans_7" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_faq_8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:typeface="serif" android:textColor="@color/textview_style" android:gravity="center_vertical" android:id="@id/txt_faq_8" android:paddingLeft="45.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_8" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/pp_header" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/layout_faq_8_container" android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginBottom="-120.0dip">
+                        <View android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                        <TextView android:typeface="serif" android:textColor="#ff888888" android:id="@id/txt_faq_ans_8" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_ans_8" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_faq_9" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:typeface="serif" android:textColor="@color/textview_style" android:gravity="center_vertical" android:id="@id/txt_faq_9" android:paddingLeft="45.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_9" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/pp_header" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/layout_faq_9_container" android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginBottom="-70.0dip">
+                        <View android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                        <TextView android:typeface="serif" android:textColor="#ff888888" android:id="@id/txt_faq_ans_9" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_ans_9" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_faq_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:typeface="serif" android:textColor="@color/textview_style" android:gravity="center_vertical" android:id="@id/txt_faq_10" android:paddingLeft="45.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_10" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/pp_header" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/layout_faq_10_container" android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginBottom="-70.0dip">
+                        <View android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                        <TextView android:typeface="serif" android:textColor="#ff888888" android:id="@id/txt_faq_ans_10" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_ans_10" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_faq_11" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:typeface="serif" android:textColor="@color/textview_style" android:gravity="center_vertical" android:id="@id/txt_faq_11" android:paddingLeft="45.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_11" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/pp_header" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/layout_faq_11_container" android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginBottom="-55.0dip">
+                        <View android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                        <TextView android:typeface="serif" android:textColor="#ff888888" android:id="@id/txt_faq_ans_11" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_faq_ans_11" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <View android:background="@drawable/custom_transparent_view_whitebg" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</LinearLayout>

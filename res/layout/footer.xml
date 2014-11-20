@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/footerRelativeLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_keyTool" android:background="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:baselineAligned="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="2.5dip" android:weightSum="4.0">
+            <View android:id="@id/view_top_footer_group" android:background="#ffff8e0d" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:background="#ff666666" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+            <View android:id="@id/view_top_footer_key" android:background="#ff666666" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:background="#ff666666" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+            <View android:id="@id/view_top_footer_setting" android:background="#ff666666" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:background="#ff666666" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+            <View android:id="@id/view_top_footer_help" android:background="#ff666666" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:weightSum="4.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_footer_group" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="1.0">
+                <ImageButton android:layout_gravity="center" android:id="@id/img_btn_group" android:background="@null" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:src="@drawable/group_footer_gray" android:layout_weight="1.0" android:contentDescription="@string/txt_img_description" />
+                <TextView android:textSize="10.0dip" android:textColor="#ff666666" android:layout_gravity="center" android:id="@id/txt_group" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_group" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:id="@id/view_footer_1" android:background="@drawable/custom_transparent_view_left" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:id="@id/view_seperator_1" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="fill_parent">
+                <View android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_footer_key" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="1.0">
+                <ImageButton android:layout_gravity="center" android:id="@id/img_btn_key" android:background="@null" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:src="@drawable/key_footer_gray" android:layout_weight="1.0" android:contentDescription="@string/txt_img_description" />
+                <TextView android:textSize="10.0dip" android:textColor="#ff666666" android:layout_gravity="center" android:id="@id/txt_key" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_key" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:id="@id/view_footer_2" android:background="@drawable/custom_transparent_view_right" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:id="@id/view_seperator_2" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="fill_parent">
+                <View android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_footer_setting" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="1.0">
+                <ImageButton android:layout_gravity="center" android:id="@id/img_btn_setting" android:background="@null" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:src="@drawable/setting_gray" android:layout_weight="1.0" android:contentDescription="@string/txt_img_description" />
+                <TextView android:textSize="10.0dip" android:textColor="#ff666666" android:layout_gravity="center" android:id="@id/txt_setting" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_setting" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:id="@id/view_footer_3" android:background="@drawable/custom_transparent_view_right" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:id="@id/view_seperator_3" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="fill_parent">
+                <View android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_footer_help" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="1.0">
+                <ImageButton android:layout_gravity="center" android:id="@id/img_btn_more" android:background="@null" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:src="@drawable/more_gray" android:layout_weight="1.0" android:contentDescription="@string/txt_img_description" />
+                <TextView android:textSize="10.0dip" android:textColor="#ff666666" android:layout_gravity="center" android:id="@id/txt_help" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="帮助" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="2.5dip" android:weightSum="4.0">
+            <View android:id="@id/view_bottom_footer_group" android:background="#ffff8e0d" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:background="#ff666666" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+            <View android:id="@id/view_bottom_footer_key" android:background="#ff666666" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:background="#ff666666" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+            <View android:id="@id/view_bottom_footer_setting" android:background="#ff666666" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:background="#ff666666" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+            <View android:id="@id/view_bottom_footer_help" android:background="#ff666666" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

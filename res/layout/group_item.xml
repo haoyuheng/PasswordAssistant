@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearLayout_listitem" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewFlipper android:id="@id/flipper" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/relativeLayout_group_item" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/group_icon" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/group_footer_gray" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/txt_img_description" />
+            <CheckBox android:id="@id/checkBox_group" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.5dip" android:button="@drawable/checkbox_selector" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="22.0dip" android:textColor="@color/text_content_style" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/group_name" android:paddingLeft="40.0dip" android:paddingRight="60.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_groupName" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ffb5b5b5" android:layout_gravity="center_vertical" android:id="@id/key_size" android:paddingRight="10.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_group_key" />
+                <View android:id="@id/view_group_tool_seperator" android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+                <ImageButton android:id="@id/img_tool_down_arrow" android:background="@null" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/tool_arrow" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ViewFlipper>
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_groupTools" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:baselineAligned="false">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:id="@id/view1" android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="5.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout_description" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+                        <TextView android:textSize="12.5sp" android:textStyle="bold" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/txt_group_description" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="No description." android:maxLines="2" />
+                    </LinearLayout>
+                    <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+                        <View android:background="#ffff8e0d" android:layout_width="fill_parent" android:layout_height="1.5dip" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout_keytool_edit" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:onClick="keyToolEditButton">
+                                <ImageButton android:layout_gravity="center" android:id="@id/img_edit" android:background="@null" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/custom_keytool_edit" android:contentDescription="@string/txt_img_description" />
+                                <TextView android:textSize="10.0sp" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/txt_keytool_edit" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Edit" />
+                            </LinearLayout>
+                            <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout_keytool_delete" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                <ImageButton android:layout_gravity="center" android:id="@id/img_delete" android:background="@null" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/custom_keytool_delete" android:contentDescription="@string/txt_img_description" />
+                                <TextView android:textSize="10.0sp" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/txt_keytool_delete" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

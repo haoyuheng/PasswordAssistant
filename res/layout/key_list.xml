@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/header" />
+    <rdi.mobapp.passwordpanacea.utility.MyLinearLayoutDialog android:orientation="vertical" android:id="@id/linearLayout_add_key_content" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:layout_marginBottom="50.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_headertooltap" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_tooltap_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <RelativeLayout android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ViewFlipper android:id="@id/flipper" android:layout_width="fill_parent" android:layout_height="fill_parent"
+                      xmlns:android="http://schemas.android.com/apk/res/android">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_innertool_tab" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="4.0">
+                            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_tooltab_add" android:background="@drawable/custom_tooltab_pressed" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="1.0" android:onClick="addKey">
+                                <ImageButton android:layout_gravity="center_vertical" android:id="@id/img_tooltab_add" android:background="@null" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/tool_tab_add" android:layout_weight="1.0" android:contentDescription="@string/txt_img_description" />
+                                <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/txt_tooltab_add" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/tool_add" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_tooltab_checkbox" android:background="@drawable/custom_tooltab_pressed" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="1.0" android:onClick="optionSelect">
+                                <ImageButton android:layout_gravity="center_vertical" android:id="@id/img_tooltab_checkbox" android:background="@null" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/tool_tab_checkbox" android:layout_weight="1.0" android:contentDescription="@string/txt_img_description" />
+                                <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/txt_tooltab_checkbox" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/tool_check" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_tooltab_list_all" android:background="@drawable/custom_tooltab_pressed" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="1.0">
+                                <ImageButton android:layout_gravity="center_vertical" android:id="@id/img_tooltab_list_all" android:background="@null" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/tool_tab_list_all" android:layout_weight="1.0" android:contentDescription="@string/txt_img_description" />
+                                <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/txt_tooltab_list_all" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/tool_list" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_tooltab_recyclebin" android:background="@drawable/custom_tooltab_pressed" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="1.0" android:onClick="optionRecyclebin">
+                                <ImageButton android:layout_gravity="center_vertical" android:id="@id/img_tooltab_recyclebin" android:background="@null" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/tool_tab_recycle" android:layout_weight="1.0" android:contentDescription="@string/txt_img_description" />
+                                <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/txt_tooltab_recyclebin" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/tool_recycle" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_checkbox_tooltab" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="4.5">
+                            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_tool_done" android:background="@drawable/custom_tooltab_pressed" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="0.5" android:onClick="optionDone">
+                                <ImageButton android:layout_gravity="center_vertical" android:id="@id/img_tool_done" android:background="@null" android:clickable="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/back_arrow_gray" android:layout_weight="2.0" android:contentDescription="@string/txt_img_description" />
+                            </LinearLayout>
+                            <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_tool_select_all" android:background="@drawable/custom_tooltab_pressed" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="1.0" android:onClick="optionSelectAll">
+                                <ImageButton android:layout_gravity="center_vertical" android:id="@id/img_tool_select" android:background="@null" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/tool_tab_checkbox" android:layout_weight="1.0" android:contentDescription="@string/txt_img_description" />
+                                <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/txt_tool_select_all" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/tool_select_all" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_tool_remove" android:background="@drawable/custom_tooltab_pressed" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="1.0" android:onClick="optionRemove">
+                                <ImageButton android:layout_gravity="center_vertical" android:id="@id/img_tool_remove" android:background="@null" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/tool_remove" android:layout_weight="1.0" android:contentDescription="@string/txt_img_description" />
+                                <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/txt_tool_remove" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:text="@string/tool_remove" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_tool_share" android:background="@drawable/custom_tooltab_pressed" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="1.0" android:onClick="optionShare">
+                                <ImageButton android:layout_gravity="center_vertical" android:id="@id/img_tool_share" android:background="@null" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/tool_share" android:layout_weight="1.0" android:contentDescription="@string/txt_img_description" />
+                                <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/txt_tool_share" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:text="@string/tool_share" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/linearLayout_tool_empty" android:background="@drawable/custom_tooltab_pressed" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                        </LinearLayout>
+                    </ViewFlipper>
+                    <View android:id="@id/view1" android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="#ffff8e0d" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/relativeLayout_key_search" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+            <View android:background="#ffff8e0d" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            <LinearLayout android:background="#ffffffff" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.5dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/search_blue" android:contentDescription="@string/txt_img_description" />
+                <EditText android:layout_gravity="center_vertical" android:id="@id/txt_key_search" android:background="@null" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:singleLine="true" android:maxLength="10" android:inputType="text" android:imeOptions="actionDone" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ListView android:id="@id/list_group" android:fadingEdge="none" android:layoutAnimation="@anim/slide_in_left_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textFilterEnabled="true" android:cacheColorHint="#00000000" android:divider="#ffcccccc" android:dividerHeight="0.5dip" android:choiceMode="multipleChoice" />
+        <RelativeLayout android:id="@id/txt_empty" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip">
+            <TextView android:textSize="24.0dip" android:textColor="@color/textview_style_gray" android:gravity="center" android:id="@id/txt_empty_list" android:background="@drawable/custom_addnew_bg" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_add_key" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </rdi.mobapp.passwordpanacea.utility.MyLinearLayoutDialog>
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <include layout="@layout/footer" />
+    </LinearLayout>
+</RelativeLayout>

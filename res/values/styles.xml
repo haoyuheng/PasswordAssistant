@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="page_background_gray">
+        <item name="android:background">@color/gray</item>
+    </style>
+    <style name="page_background_white">
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="noAnimTheme" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="Theme" parent="@android:style/Theme">
+        <item name="pageBackground">@style/page_background_white</item>
+    </style>
+    <style name="Theme.Black" parent="@style/Theme">
+        <item name="pageBackground">@style/page_background_gray</item>
+    </style>
+    <style name="Theme.Blue" parent="@style/Theme">
+        <item name="pageBackground">@style/page_background_white</item>
+    </style>
+</resources>

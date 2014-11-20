@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/header" />
+    <rdi.mobapp.passwordpanacea.utility.MyLinearLayoutDialog android:orientation="vertical" android:id="@id/linearLayout_add_key_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:layout_marginBottom="50.0dip">
+        <View android:background="#ffff8e0d" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <ScrollView android:orientation="vertical" android:id="@id/scrollView_settings" android:layout_width="fill_parent" android:layout_height="fill_parent" android:isScrollContainer="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/linearlayout_general_settings" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_general_settings_heading" android:background="@drawable/custom_keytool" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/setting_general" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/tools_setting" />
+                        <TextView android:textSize="22.0sp" android:textColor="@color/text_content_style" android:gravity="center_vertical" android:id="@id/txt_general_settings" android:paddingLeft="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="-25.0dip" android:text="@string/txt_setting_header" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_general_setting_container" android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_marginBottom="-250.0dip">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <LinearLayout android:id="@id/linearlayout_password_display" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:weightSum="2.0">
+                                    <TextView android:textSize="20.0dip" android:textColor="#ff666666" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/txt_passwordDisplay" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_password_display" android:layout_weight="1.4" />
+                                    <TextView android:textSize="24.0dip" android:gravity="right" android:id="@id/txt_passwordDisplay_on" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_setting_on" android:layout_weight="0.3" />
+                                    <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" />
+                                    <TextView android:textSize="24.0dip" android:gravity="left" android:id="@id/txt_passwordDisplay_off" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_setting_off" android:layout_weight="0.3" />
+                                </LinearLayout>
+                                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                                <LinearLayout android:id="@id/linearlayout_group_search" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:weightSum="2.0">
+                                    <TextView android:textSize="20.0dip" android:textColor="#ff666666" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/txt_groupSearch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_setting_group_search_enable" android:layout_weight="1.4" />
+                                    <TextView android:textSize="24.0dip" android:gravity="right" android:id="@id/txt_groupSearch_on" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_setting_on" android:layout_weight="0.3" />
+                                    <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" />
+                                    <TextView android:textSize="24.0dip" android:gravity="left" android:id="@id/txt_groupSearch_off" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_setting_off" android:layout_weight="0.3" />
+                                </LinearLayout>
+                                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                                <LinearLayout android:id="@id/linearlayout_key_search" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:weightSum="2.0">
+                                    <TextView android:textSize="20.0dip" android:textColor="#ff666666" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/txt_keySearch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_setting_key_search_enable" android:layout_weight="1.4" />
+                                    <TextView android:textSize="24.0dip" android:gravity="right" android:id="@id/txt_keySearch_on" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_setting_on" android:layout_weight="0.3" />
+                                    <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" />
+                                    <TextView android:textSize="24.0dip" android:gravity="left" android:id="@id/txt_keySearch_off" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_setting_off" android:layout_weight="0.3" />
+                                </LinearLayout>
+                                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                                <LinearLayout android:id="@id/linearlayout_copy_outside" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:weightSum="2.0">
+                                    <TextView android:textSize="20.0dip" android:textColor="#ff666666" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/txt_copyOutsideApp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_setting_copy_out_app" android:layout_weight="1.4" />
+                                    <TextView android:textSize="24.0dip" android:gravity="right" android:id="@id/txt_copyOutsideApp_on" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_setting_on" android:layout_weight="0.3" />
+                                    <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" />
+                                    <TextView android:textSize="24.0dip" android:gravity="left" android:id="@id/txt_copyOutsideApp_off" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_setting_off" android:layout_weight="0.3" />
+                                </LinearLayout>
+                                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                                <LinearLayout android:id="@id/linearlayout_app_lock" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:weightSum="2.0">
+                                    <TextView android:textSize="20.0dip" android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@id/txt_setAppLock" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_setting_set_app_lock" android:layout_weight="1.4" />
+                                    <TextView android:textSize="24.0dip" android:gravity="right" android:id="@id/txt_setAppLock_on" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_setting_on" android:layout_weight="0.3" />
+                                    <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" />
+                                    <TextView android:textSize="24.0dip" android:gravity="left" android:id="@id/txt_setAppLock_off" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_setting_off" android:layout_weight="0.3" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <View android:id="@id/view1" android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linerLayout_backup_restore" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_bnr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+                        <LinearLayout android:id="@id/linearLayout_backup" android:background="@drawable/custom_keytool" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@id/setting_bnr" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/tools_backup" />
+                            <TextView android:textSize="22.0sp" android:textColor="@color/text_content_style" android:gravity="center_vertical" android:id="@id/txt_backup" android:paddingLeft="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="-25.0dip" android:text="备份" />
+                        </LinearLayout>
+                        <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                        <LinearLayout android:id="@id/linearLayout_restore" android:background="@drawable/custom_linearlayout_presssed" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@id/setting_bnr" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/tools_restore" />
+                            <TextView android:textSize="22.0sp" android:textColor="@color/text_content_style" android:gravity="center_vertical" android:id="@id/txt_restore" android:paddingLeft="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="-25.0dip" android:text="恢复" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_recyclebin" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/setting_rb" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/trash_gray" />
+                    <TextView android:textSize="22.0sp" android:textColor="@color/text_content_style" android:gravity="center_vertical" android:id="@id/txt_recycle_bin" android:paddingLeft="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="-25.0dip" android:text="回收站" />
+                </LinearLayout>
+                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_template_setting" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/setting_template_setting" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/tools_template" />
+                    <TextView android:textSize="22.0sp" android:textColor="@color/text_content_style" android:gravity="center_vertical" android:id="@id/txt_template_setting" android:paddingLeft="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="-25.0dip" android:text="密码模板" />
+                </LinearLayout>
+                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/linerLayout_change_master_key" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout_mk" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/setting_masterkey" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/tools_masterkey" />
+                        <TextView android:textSize="22.0sp" android:textColor="@color/text_content_style" android:gravity="center_vertical" android:id="@id/txt_change_master_key" android:paddingLeft="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="-25.0dip" android:text="@string/txt_set_master_key" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_change_master_key_container" android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-300.0dip">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:orientation="vertical" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <RelativeLayout android:id="@id/layout_edittext_old_master_key" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip">
+                                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_alignParentBottom="true" />
+                                    <EditText android:textColor="#ff000000" android:id="@id/txt_old_master_key" android:background="#ffefefef" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.5dip" android:hint="@string/txt_setting_old_master_key" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                                </RelativeLayout>
+                                <RelativeLayout android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip">
+                                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_alignParentBottom="true" />
+                                    <EditText android:textColor="#ff000000" android:id="@id/txt_new_master_key" android:background="#ffefefef" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.5dip" android:hint="@string/txt_setting_new_master_key" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                                </RelativeLayout>
+                                <RelativeLayout android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+                                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_alignParentBottom="true" />
+                                    <EditText android:textColor="#ff000000" android:id="@id/txt_confirm_new_master_key" android:background="#ffefefef" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.5dip" android:hint="@string/txt_setting_confirm_master_key" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                                </RelativeLayout>
+                                <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_change_sec_que_ans" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                                    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/linearlayout_img_txt_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                        <ImageView android:layout_gravity="center_vertical" android:id="@id/img_down_arrow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/spinner_arrow" />
+                                        <TextView android:textSize="14.0dip" android:gravity="left" android:id="@id/txt_sec_que_ans" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="以防忘记管理密码." />
+                                    </LinearLayout>
+                                    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_change_sec_que_ans_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_marginBottom="-85.0dip">
+                                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                                            <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_alignParentBottom="true" />
+                                            <EditText android:textColor="#ff000000" android:id="@id/txt_master_key_sec_que" android:background="#ffefefef" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.5dip" android:hint="请输入密保问题" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:inputType="textCapSentences" />
+                                        </RelativeLayout>
+                                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+                                            <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_alignParentBottom="true" />
+                                            <EditText android:textColor="#ff000000" android:id="@id/txt_master_key_sec_ans" android:background="#ffefefef" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.5dip" android:hint="请输入密保答案" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:inputType="textCapSentences" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                                </LinearLayout>
+                                <TableRow android:gravity="right" android:id="@id/tableRow_Save_Cancle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+                                    <Button android:textSize="28.0dip" android:textColor="@color/textview_style" android:id="@id/btn_save" android:background="@null" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="@string/btn_save" />
+                                    <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="35.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+                                    <Button android:textSize="28.0dip" android:textColor="@color/textview_style_gray" android:id="@id/btn_cancle" android:background="@null" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="重置" />
+                                </TableRow>
+                            </LinearLayout>
+                            <View android:id="@id/view1" android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                </LinearLayout>
+                <TableRow android:gravity="right" android:id="@id/tableRow_extra" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                    <Button android:textSize="20.0dip" android:textColor="@color/textview_style" android:id="@id/btn_save" android:background="@drawable/custom_button" android:focusable="true" android:layout_width="100.0dip" android:layout_height="35.0dip" android:text="@string/btn_save" />
+                    <Button android:textSize="20.0dip" android:textColor="@color/textview_style_gray" android:id="@id/btn_cancle" android:background="@drawable/custom_button" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:text="@string/btn_cancel" />
+                </TableRow>
+            </LinearLayout>
+        </ScrollView>
+    </rdi.mobapp.passwordpanacea.utility.MyLinearLayoutDialog>
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <include layout="@layout/footer" />
+    </LinearLayout>
+</RelativeLayout>

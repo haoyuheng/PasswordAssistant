@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_welcome" android:background="#ffff8e0d" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="75.0dip">
+        <ImageView android:id="@id/imageView2" android:layout_width="90.0dip" android:layout_height="wrap_content" android:src="@drawable/pp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="40.0sp" android:id="@id/txt_welcome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="欢迎!" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="12.0sp" android:textColor="#95ffffff" android:id="@id/txt_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快速向导..." />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@id/layout_overview_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:id="@id/view1" android:background="#ffff8e0d" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="70.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="14.0dip" android:src="@drawable/bullet_1" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    <TextView android:textSize="38.0sp" android:textColor="#ff000000" android:id="@id/txt_overview_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_marginBottom="14.0dip" android:text="添加分组" android:layout_alignBottom="@id/view1" android:layout_alignParentRight="true" />
+                    <TextView android:typeface="serif" android:textColor="#ff888888" android:gravity="right" android:id="@id/textView2" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="添加一个分组并在其中管理密码." android:layout_below="@id/view1" android:layout_alignRight="@id/txt_overview_1" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/layout_overview_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:id="@id/view1" android:background="#ffff8e0d" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="70.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="14.0dip" android:src="@drawable/bullet_2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    <TextView android:textSize="38.0sp" android:textColor="#ff000000" android:id="@id/txt_overview_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_marginBottom="14.0dip" android:text="添加密码" android:layout_alignBottom="@id/view1" android:layout_alignParentRight="true" />
+                    <TextView android:typeface="serif" android:textColor="#ff888888" android:gravity="right" android:id="@id/textView2" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="在分组中添加新的密码，存储你的账户密码." android:layout_below="@id/view1" android:layout_alignRight="@id/txt_overview_2" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_overview_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:typeface="serif" android:textColor="#ff888888" android:layout_gravity="left" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:text="只需一次点击就可以跳转账户登陆页（用户名密码自动填写）." />
+                    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_keyTool" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:baselineAligned="false">
+                        <View android:background="#ffff8e0d" android:layout_width="fill_parent" android:layout_height="1.5dip" />
+                        <LinearLayout android:orientation="vertical" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <RelativeLayout android:background="#ffefefef" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <View android:id="@id/view1" android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="5.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout_keytool_username" android:background="@drawable/custom_keytool" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                        <ImageButton android:layout_gravity="center" android:id="@id/img_cpy_username" android:background="@null" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/keytool_uname" android:contentDescription="@string/txt_img_description" />
+                                        <TextView android:textSize="10.0sp" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/txt_keytool_username" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户名" />
+                                    </LinearLayout>
+                                    <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout_keytool_password" android:background="@drawable/custom_keytool" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                        <ImageButton android:layout_gravity="center" android:id="@id/img_cpy_password" android:background="@null" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/keytool_psw" android:contentDescription="@string/txt_img_description" />
+                                        <TextView android:textSize="10.0sp" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/txt_keytool_password" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="密码" />
+                                    </LinearLayout>
+                                    <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout_keytool_url" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                        <ImageButton android:layout_gravity="center" android:id="@id/img_url" android:background="@null" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/keytool_url" android:contentDescription="@string/txt_img_description" />
+                                        <TextView android:textSize="10.0sp" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/txt_keytool_url" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="链接" />
+                                    </LinearLayout>
+                                    <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout_keytool_edit" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                        <ImageButton android:layout_gravity="center" android:id="@id/img_edit" android:background="@null" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/custom_keytool_edit" android:contentDescription="@string/txt_img_description" />
+                                        <TextView android:textSize="10.0sp" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/txt_keytool_edit" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编辑" />
+                                    </LinearLayout>
+                                    <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout_keytool_delete" android:background="#ffffffff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                        <ImageButton android:layout_gravity="center" android:id="@id/img_delete" android:background="@null" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/custom_keytool_delete" android:contentDescription="@string/txt_img_description" />
+                                        <TextView android:textSize="10.0sp" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/txt_keytool_delete" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+                    <TextView android:typeface="serif" android:textColor="#ff888888" android:gravity="right" android:layout_gravity="right" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="14.0dip" android:text="点击图标复制用户名或密码." />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/layout_overview_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:id="@id/view1" android:background="#ffff8e0d" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="70.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="14.0dip" android:src="@drawable/bullet_3" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    <TextView android:textSize="38.0sp" android:textColor="#ff000000" android:id="@id/txt_overview_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_marginBottom="14.0dip" android:text="我的模板" android:layout_alignBottom="@id/view1" android:layout_alignParentRight="true" />
+                    <TextView android:typeface="serif" android:textColor="#ff888888" android:gravity="right" android:id="@id/textView2" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/txt_overview_3" android:layout_below="@id/view1" android:layout_alignRight="@id/txt_overview_3" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_overview_4_1" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+                        <View android:background="#ff777777" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                        <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.5dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                            <TextView android:textSize="18.0sp" android:ellipsize="end" android:id="@id/txt_field_title" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="标题" android:singleLine="true" android:layout_toLeftOf="@id/template_item_tools_layout" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+                        <View android:background="#ff777777" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                        <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.5dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                            <TextView android:textSize="18.0sp" android:ellipsize="end" android:id="@id/txt_field_uname" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="用户名" android:singleLine="true" android:layout_toLeftOf="@id/template_item_tools_layout" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+                        <View android:background="#ff777777" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                        <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.5dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                            <TextView android:textSize="18.0sp" android:ellipsize="end" android:id="@id/txt_field_psw" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="密码" android:singleLine="true" android:layout_toLeftOf="@id/template_item_tools_layout" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+                        <View android:background="#ff777777" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                        <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.5dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                            <TextView android:textSize="18.0sp" android:ellipsize="end" android:id="@id/txt_field_url" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="链接" android:singleLine="true" android:layout_toLeftOf="@id/template_item_tools_layout" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+                        <View android:background="#ff777777" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                        <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.5dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                            <TextView android:textSize="18.0sp" android:textColor="#ffff8e0d" android:ellipsize="end" android:id="@id/txt_field_new_field" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="新条目" android:singleLine="true" android:layout_toLeftOf="@id/template_item_tools_layout" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                            <LinearLayout android:id="@id/template_item_tools_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/template_item_tools_bg" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="1.0dip">
+                                    <ImageButton android:layout_gravity="right" android:id="@id/img_btn_rename" android:background="@null" android:paddingLeft="5.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/custom_tool_edit" />
+                                    <ImageButton android:layout_gravity="right" android:id="@id/img_btn_remove" android:background="@null" android:paddingLeft="3.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/custom_tool_delete" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:id="@id/layout_overview_5" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:id="@id/view1" android:background="#ffff8e0d" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="70.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="14.0dip" android:src="@drawable/bullet_4" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    <TextView android:textSize="38.0sp" android:textColor="#ff000000" android:id="@id/txt_overview_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_marginBottom="14.0dip" android:text="我的设置" android:layout_alignBottom="@id/view1" android:layout_alignParentRight="true" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="14.0dip" android:layout_below="@id/view1" android:layout_alignRight="@id/txt_overview_4">
+                        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="center_vertical" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/tools_setting" />
+                            <TextView android:textSize="22.0sp" android:textColor="@color/text_content_style" android:gravity="center_vertical" android:id="@id/txt_overview_generalsettings" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_setting_header" />
+                        </LinearLayout>
+                        <TextView android:typeface="serif" android:textColor="#ff888888" android:gravity="right" android:layout_gravity="right" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/txt_overview_4.1" />
+                        <LinearLayout android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                            <ImageView android:layout_gravity="center_vertical" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tools_backup" />
+                            <TextView android:textSize="22.0sp" android:textColor="@color/text_content_style" android:gravity="center_vertical" android:id="@id/txt_overview_backup" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="备份" />
+                            <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                            <ImageView android:layout_gravity="center_vertical" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tools_restore" />
+                            <TextView android:textSize="22.0sp" android:textColor="@color/text_content_style" android:gravity="center_vertical" android:id="@id/txt_overview_restore" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="恢复" />
+                        </LinearLayout>
+                        <TextView android:typeface="serif" android:textColor="#ff888888" android:gravity="left" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/txt_overview_4.2" />
+                        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                            <ImageView android:layout_gravity="center_vertical" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/trash_gray" />
+                            <TextView android:textSize="22.0sp" android:textColor="@color/text_content_style" android:gravity="center_vertical" android:id="@id/txt_overview_trash" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="回收站" />
+                        </LinearLayout>
+                        <TextView android:typeface="serif" android:textColor="#ff888888" android:gravity="right" android:layout_gravity="right" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/txt_overview_4.3" />
+                        <LinearLayout android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                            <ImageView android:layout_gravity="center_vertical" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tools_template" />
+                            <TextView android:textSize="22.0sp" android:textColor="@color/text_content_style" android:gravity="center_vertical" android:id="@id/txt_overview_keytemplate" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="密码模板" />
+                        </LinearLayout>
+                        <TextView android:typeface="serif" android:textColor="#ff888888" android:gravity="left" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/txt_overview_4.4" />
+                        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                            <ImageView android:layout_gravity="center_vertical" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/tools_masterkey" />
+                            <TextView android:textSize="22.0sp" android:textColor="@color/text_content_style" android:gravity="center_vertical" android:id="@id/txt_overview_masterkey" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置管理密码" />
+                        </LinearLayout>
+                        <TextView android:typeface="serif" android:textColor="#ff888888" android:gravity="right" android:layout_gravity="right" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/txt_overview_4.5" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_ready_to_use" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="75.0dip">
+                    <View android:background="#ffff8e0d" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                    <LinearLayout android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <View android:background="@drawable/custom_transparent_view" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                            <TextView android:textSize="40.0sp" android:textColor="@color/textview_style_white_blue" android:gravity="center" android:id="@id/txt_ready_to_use" android:background="@drawable/custom_keytool_blue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="开始使用" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <View android:background="@drawable/custom_transparent_view_whitebg" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</LinearLayout>

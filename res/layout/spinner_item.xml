@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:background="@drawable/custom_tooltab_pressed" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_key_item" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/textview_style_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/spinner_item_title" android:paddingLeft="10.0dip" android:paddingRight="45.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/txt_keyName" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/img_radio_button" android:background="@null" android:layout_width="26.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@drawable/radio_button_unselected" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/footerRelativeLayout" android:background="#00000000" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout_keyTool" android:background="#00000000" android:visibility="visible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="50.0dip" android:baselineAligned="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>
